@@ -1,4 +1,4 @@
-# devchosil.github.io
+# To Do List
 
 - 사용한 기술 스택 : HTML, CSS, JavaScript
 - 개발 환경 : Windows, Visual Studio Code
