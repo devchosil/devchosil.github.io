@@ -1,8 +1,4 @@
-//이미지 가지고 오기
-//이미지 이름으로 배열만들기
-//..ㅇㅅㅇ...랜덤으로.. 출력..
-//html주소ㅔ에 편입(?)
-
+//이미지 가져와서 랜덤으로 출력
 const images = ["1.jpg", "2.jpg", "3.jpg"];
 const todaysImg = images[Math.floor(Math.random()*images.length)];
 const bgImg = document.createElement("img");

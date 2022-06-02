@@ -20,6 +20,5 @@ function onGeoError() {
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
 /* 
-openweathermap 가입해서 API 활용하기 - API에 대한 유튜브 영상보기
-
+openweathermap 가입해서 API 활용하기
 */

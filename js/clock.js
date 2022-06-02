@@ -1,8 +1,7 @@
 //시계만들기
-//setTimeout, setInterval
 /* 1. 표시해줄 요소 선택 (h2)
-   2. text로 넣어줌 - 시, 분, 초 넣어야겟네
-   3. 함수 걸기..ㅇㅅㅇ..
+   2. text로 넣어줌 - 시, 분, 초
+   3. 함수
 */
 
 const clock = document.querySelector("#clock");
@@ -16,10 +15,8 @@ function getClock() {
 }
 
 getClock();
-setInterval(getClock, 1000);   //여기서 getClock()하는거랑 ()떼는거랑 뭐가다르지..?
+setInterval(getClock, 1000);
 
-//모든 변수랑, 과정을.. 함수에 넣어주는거
-//setInterval 실행할때
 
 
 
