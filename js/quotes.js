@@ -46,8 +46,8 @@ const quotes = [
 //span두개 각각 가져오기 -> 끼워넣기~
 
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".quote span:first-child");
+const author = document.querySelector(".quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
 
 quote.innerText = todaysQuote.quote;

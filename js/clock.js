@@ -5,7 +5,9 @@
 */
 
 const clock = document.querySelector("#clock");
+const todayDate = document.querySelector(".date");
 
+// 시계 가져오기
 function getClock() {
   const date = new Date();
   const hours = String(date.getHours()).padStart(2,"0");
@@ -17,6 +19,19 @@ function getClock() {
 getClock();
 setInterval(getClock, 1000);
 
+//날짜 가져오기
+function getDate() {
+  const today = new Date();
+  const day = today.getDay();
+  const days = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+
+  const todayString = today.toLocaleDateString();
+  const todayDay = days[day];
+
+  todayDate.innerText = `${todayString} ${todayDay}`;
+}
+
+getDate();
 
 
 

@@ -1,5 +1,5 @@
 //이미지 가져와서 랜덤으로 출력
-const images = ["1.jpg", "2.jpg", "3.jpg"];
+const images = ["1.jpg", "2.jpg"];
 const todaysImg = images[Math.floor(Math.random()*images.length)];
 const bgImg = document.createElement("img");
 bgImg.src = `img/${todaysImg}`;
