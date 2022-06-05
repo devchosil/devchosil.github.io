@@ -1,10 +1,17 @@
-const logoutBtn = document.querySelector("#greeting button");
+// const greeting = document.querySelector("#greeting");
 
-//로그아웃할때 함수
-function logout() {
-  localStorage.clear();
-  location.reload();
-}
+// if(greeting.hasChildNodes) {
+//      //로그아웃할때 함수
+//     function logout() {
+//       localStorage.clear();
+//       location.reload();
+//     }
 
-//로그아웃할 때 이벤트
-logoutBtn.addEventListener("click",logout());
+//     var logoutBtn = document.querySelector("#greeting button");
+
+//     //로그아웃할 때 이벤트
+//     logoutBtn.addEventListener("click",logout);
+  
+//   } else {
+//     null;
+//   }

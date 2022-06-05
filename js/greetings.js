@@ -21,6 +21,16 @@ function onLoginSubmit(event) {
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
+         //로그아웃할때 함수
+         function logout() {
+          localStorage.clear();
+          location.reload();
+        }
+    
+        var logoutBtn = document.querySelector("#greeting button");
+    
+        //로그아웃할 때 이벤트
+        logoutBtn.addEventListener("click",logout);
 }
 
 //로그인 후 인사말
@@ -33,8 +43,9 @@ function paintGreetings(username) {
 
   span.innerText = `Hello! ${username}!`;
   button.innerText = `LOGOUT`;
+
   // greetings.innerHTML = `<span>Hello! ${username}!</span>
-  // <button class="logoutBtn">LOGOUT</button>`;
+  // // <button class="logoutBtn">LOGOUT</button>`;
   greetings.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -50,8 +61,16 @@ if(savedUsername === null) {
   loginInput.classList.add(HIDDEN_CLASSNAME);
   loginButton.classList.add(HIDDEN_CLASSNAME);
   paintGreetings(savedUsername);
+       //로그아웃할때 함수
+        function logout() {
+        localStorage.clear();
+        location.reload();
+      }
+  
+      var logoutBtn = document.querySelector("#greeting button");
+  
+      //로그아웃할 때 이벤트
+      logoutBtn.addEventListener("click",logout);
+    
 }
-
-
-
 
