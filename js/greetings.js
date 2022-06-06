@@ -22,7 +22,7 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
          //로그아웃할때 함수
-         function logout() {
+        function logout() {
           localStorage.clear();
           location.reload();
         }

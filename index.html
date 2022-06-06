@@ -8,8 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300&display=swap" rel="stylesheet">
-
-
+<script src="https://kit.fontawesome.com/7533f20e11.js" crossorigin="anonymous"></script>
 
   <title>To Do List</title>
 </head>
@@ -20,11 +19,21 @@
       <span></span>
   </section>
 
+  <!-- 내용 -->
   <section class="contents">
     <div class="col1">
-      <div class="date"></div>
-      <div id="clock"></div>
-      
+      <!-- 날짜시간 -->
+      <div>
+        <div class="date"></div>
+        <div id="clock"></div>
+      </div>
+
+      <!-- 날씨 -->
+      <div id="weather">
+        <sspan></sspan>
+        <span></span>
+      </div>
+
       <!-- 로그인 -->
       <div class="hidden" id="askName">What is your name?</div>
 
@@ -39,12 +48,6 @@
         </form>
 
       <h1 class="hidden" id="greeting"></h1>
-
-      <!-- 날씨 -->
-      <div id="weather">
-        <span></span>
-        <span></span>
-      </div>
     </div>
 
     <div class="col2">
@@ -56,7 +59,13 @@
       </ul>
     </div>
 
-    <div class="col3"></div>
+    <div class="col3">
+      <span class="click" onclick="window.open('https://www.youtube.com/')"><i class="fa-brands fa-youtube"></i> YOUTUBE</span>
+
+      <span class="click" onclick="window.open('https://www.facebook.com/')"><i class="fa-brands fa-facebook"></i> FACEBOOK</span>
+
+      <span class="click" onclick="window.open('https://www.instagram.com/')"><i class="fa-brands fa-instagram-square"></i> INSTAGRAM</span>
+    </div>
 
 </section>
 
@@ -67,7 +76,6 @@
 <script src="js/background.js"></script>
 <script src="js/todo.js"></script>
 <script src="js/weather.js"></script>
-<script src="js/logout.js"></script>
 </body>
 
 </html>

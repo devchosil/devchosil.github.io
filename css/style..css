@@ -7,45 +7,66 @@ body {
   background-size: cover; */
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: 'Nunito', sans-serif;
   color: rgb(255, 255, 255);
+  
 }
 
 /* 배경 투명도 주기 */
-/* background-color, opacity 효과를 따로 주니, 글자(자식요소)도 같이 투명해짐
--> background-color: rgb(254, 243, 255, 0.1); 이런식으로 작성하면 자식요소는 투명해지지 X */
 .quote, .col1, .col2, .col3 {
   background-color: rgb(254, 243, 255, 0.2);
   border-radius: 10px;
+  padding: 20px;
 }
+/* background-color, opacity 효과를 따로 주니, 글자(자식요소)도 같이 투명해짐
+-> background-color: rgb(254, 243, 255, 0.1); 이런식으로 작성하면 자식요소는 투명해지지 X */
 
 /* 명언 */
 .quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
   min-width: 550px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding: 10px 20px 10px 20px;
 }
 
-/* 날짜 및 로그인 */
+.quote span:first-child {
+  text-align: center;
+}
+
+.quote span:last-child {
+  text-align: end;
+  padding-right: 20px;
+}
+
+/* 내용 */
 .contents {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-#weather {
-  padding-top: 5px;
-  padding-left: 5px;
-  font-size: 20px;
+/* 날짜 및 로그인 */
+.col1 {
+  margin-right: 20px;
 }
 
-#clock {
-  padding: 100px 0 40px 0;
-}
-
-section {
+.col1 div:first-child {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 3px;
+  font-size: 20px;
+
+}
+
+.date {
+  padding-right: 10px;
+}
+
+#weather {
+  padding-bottom: 50px;
 }
 
 img {
@@ -62,7 +83,7 @@ img {
 }
 
 #askName {
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -76,32 +97,87 @@ img {
 }
 
 #login-form input[type="text"] {
-  height: 50px;
+  height: 30px;
   width: 200px;
   color: aliceblue;
+  margin-right: 5px;
+  border-radius: 5px;
+  border-color: aliceblue;
 }
 
-input[type="submit"] {
-  border: none;
-  border-radius: 8%;
+#login-form button {
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: aliceblue;
+  color:aliceblue;
   font-weight: bold;
-  background-color: beige;
-  height: 50px;
-  width: 75px;
-  margin-left: 5px;
+}
+
+#login-form button:active {
+  top: 2px;
+  position: relative;
+  box-shadow: 1px 1px 0 rgb(199, 199, 199);
 }
 
 /* To Do List */
+.col2 {
+  margin-right: 20px;
+}
+
+.todaysWork {
+  padding-bottom: 15px;
+}
+
 #todo-form input[type="text"] {
   height: 30px;
   width: 200px;
   background-color: transparent;
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 5px;
+}
+
+ul {
+  padding-left: 7px;
 }
 
 li {
   list-style: none;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: aliceblue;
 }
 
-.todaysWork {
-  font-size: 30px;
+li > button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+#greeting {
+  font-size: 25px;
+}
+
+#greeting button {
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: aliceblue;
+  color:aliceblue;
+  font-weight: bold;
+  height: 30px;
+  margin-left: 15px;
+}
+
+/* sns 링크 */
+.col3 {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.click {
+  cursor: pointer;
+  padding: 5px;
 }
